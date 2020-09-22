@@ -1,5 +1,4 @@
 const util = require('./util');
-const util = require('./util');
 const chai = require('chai');
 const { expect } = chai;
 
