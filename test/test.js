@@ -1,8 +1,9 @@
 const util = require('./util');
+const util = require('./util');
 const chai = require('chai');
 const { expect } = chai;
 
-const { 
+const {
     lucasNumberMemo,
     minChange
 } = require('../lib/problems');
@@ -27,7 +28,7 @@ describe('lucasNumberMemo(n)', () => {
     context('when the input is large', () => {
         it ('runtime should not grow exponentially', () => {
             util.catchStackOverflow(lucasNumberMemo, 10);
-            
+
             expect(lucasNumberMemo(40)).to.equal(228826127);
             expect(lucasNumberMemo(41)).to.equal(370248451);
             expect(lucasNumberMemo(42)).to.equal(599074578);
